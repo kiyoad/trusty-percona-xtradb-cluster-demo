@@ -1,0 +1,12 @@
+---
+# Common settings
+
+xtradb_servers:
+  - ip: 10.0.0.60
+    name: tester.local tester
+  - ip: 10.0.0.61
+    name: sv1.local sv1
+  - ip: 10.0.0.62
+    name: sv2.local sv2
+  - ip: 10.0.0.63
+    name: sv3.local sv3

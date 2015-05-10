@@ -1,0 +1,5 @@
+---
+# Setup Percona XtraDB Cluster
+
+- name: Install Percona XtraDB Cluster server
+  apt: name=percona-xtradb-cluster-56

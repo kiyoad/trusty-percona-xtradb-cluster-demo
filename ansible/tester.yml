@@ -1,0 +1,9 @@
+---
+# Percona XtraDB Cluster tester
+
+- hosts: tester
+  roles:
+    - add-percona-repo
+    - common
+    - tester
+  sudo: yes
