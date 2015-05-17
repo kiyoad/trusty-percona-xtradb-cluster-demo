@@ -19,3 +19,4 @@ xtradb_servers:
   - ip: "{{ xtradb_server_ips[2] }}"
     name: sv3.local sv3
 
+my_ip: "{{ ansible_eth1.ipv4.address }}"
