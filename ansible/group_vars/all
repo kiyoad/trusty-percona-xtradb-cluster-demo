@@ -1,6 +1,9 @@
 ---
 # Common settings
 
+db_root_password: Passw0rd
+db_clustercheckuser_password: ok0rng
+
 xtradb_servers:
   - ip: 10.0.0.60
     name: tester.local tester
