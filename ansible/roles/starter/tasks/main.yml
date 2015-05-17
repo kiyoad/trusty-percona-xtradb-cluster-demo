@@ -13,5 +13,5 @@
 - name: Install ssh/config
   copy: src=config dest=/home/vagrant/.ssh/config owner=vagrant group=vagrant mode=0600
 
-- name: Install pxc install script
+- name: Install Percona XtraDB Cluster startup script
   template: src=setup-pxc.sh.j2 dest=/home/vagrant/setup-pxc.sh owner=vagrant group=vagrant mode=0700

@@ -1,5 +1,5 @@
 ---
-# Deploy Ceph
+# Deploy Percona XtraDB Cluster
 
 - include: xtradb.yml
 - include: starter.yml
