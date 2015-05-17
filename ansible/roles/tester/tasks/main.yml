@@ -1,8 +1,0 @@
----
-# Setup tester
-
-- name: Install hosts
-  template: src=hosts.j2 dest=/etc/hosts
-
-- name: Install Percona XtraDB Cluster client
-  apt: name=percona-xtradb-cluster-client-5.6

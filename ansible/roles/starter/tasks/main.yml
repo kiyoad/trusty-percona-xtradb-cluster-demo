@@ -1,0 +1,17 @@
+---
+# Setup starter
+
+- name: Install hosts
+  template: src=hosts.j2 dest=/etc/hosts
+
+- name: Install Percona XtraDB Cluster client
+  apt: name=percona-xtradb-cluster-client-5.6
+
+- name: Install private-key
+  copy: src=pxc_id_rsa dest=/home/vagrant/.ssh/pxc_id_rsa owner=vagrant group=vagrant mode=0600
+
+- name: Install ssh/config
+  copy: src=config dest=/home/vagrant/.ssh/config owner=vagrant group=vagrant mode=0600
+
+- name: Install pxc install script
+  template: src=setup-pxc.sh.j2 dest=/home/vagrant/setup-pxc.sh owner=vagrant group=vagrant mode=0700

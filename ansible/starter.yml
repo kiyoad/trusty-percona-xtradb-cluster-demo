@@ -1,0 +1,9 @@
+---
+# Percona XtraDB Cluster starter
+
+- hosts: starter
+  roles:
+    - add-percona-repo
+    - common
+    - starter
+  sudo: yes

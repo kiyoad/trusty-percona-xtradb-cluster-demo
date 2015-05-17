@@ -2,4 +2,4 @@
 # Deploy Ceph
 
 - include: xtradb.yml
-- include: tester.yml
+- include: starter.yml
