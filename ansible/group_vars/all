@@ -4,12 +4,18 @@
 db_root_password: Passw0rd
 db_clustercheckuser_password: ok0rng
 
+xtradb_server_ips:
+  - 10.0.0.61
+  - 10.0.0.62
+  - 10.0.0.63
+
 xtradb_servers:
   - ip: 10.0.0.60
-    name: tester.local tester
-  - ip: 10.0.0.61
+    name: starter.local starter
+  - ip: "{{ xtradb_server_ips[0] }}"
     name: sv1.local sv1
-  - ip: 10.0.0.62
+  - ip: "{{ xtradb_server_ips[1] }}"
     name: sv2.local sv2
-  - ip: 10.0.0.63
+  - ip: "{{ xtradb_server_ips[2] }}"
     name: sv3.local sv3
+
