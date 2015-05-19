@@ -14,6 +14,7 @@ default_storage_engine=InnoDB
 
 # This changes how InnoDB autoincrement locks are managed and is a requirement for Galera
 innodb_autoinc_lock_mode=2
+innodb_locks_unsafe_for_binlog=1
 
 # Node #1 address
 wsrep_node_address={{ my_ip }}
